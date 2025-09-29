@@ -1,0 +1,5 @@
+requests
+pandas
+openpyxl
+flask
+websocket-client
