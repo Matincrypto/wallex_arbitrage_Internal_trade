@@ -154,7 +154,7 @@ def run_analysis():
                             "exit_price": round(calculated_exit_price_tmn, 4),
                             "expected_profit_percentage": round(percentage_difference, 2),
                             "asset_name": base_asset,
-                            "strategy_name": "Wallex Hybrid Arbitrage (Fallback)",
+                            "strategy_name": "Internal",
                             "exchange_name": "Wallex",
                             "price_type": price_type # <-- نوع قیمت استفاده شده
                         }
@@ -182,4 +182,5 @@ if __name__ == "__main__":
             logger.critical(f"An unexpected error occurred in the main loop: {e}", exc_info=True)
         wait_time = config.RUN_INTERVAL_SECONDS
         logger.info(f"Waiting for {wait_time} seconds before the next run...")
+
         time.sleep(wait_time)
