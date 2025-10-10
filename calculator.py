@@ -151,6 +151,7 @@ def run_analysis():
                         
                         opportunity_detail = {
                             "entry_price": entry_price,
+                            "pair : tmn/"base_asset,
                             "exit_price": round(calculated_exit_price_tmn, 4),
                             "expected_profit_percentage": round(percentage_difference, 2),
                             "asset_name": base_asset,
@@ -184,3 +185,4 @@ if __name__ == "__main__":
         logger.info(f"Waiting for {wait_time} seconds before the next run...")
 
         time.sleep(wait_time)
+
