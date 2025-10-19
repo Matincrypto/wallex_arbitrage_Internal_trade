@@ -37,4 +37,4 @@ def index():
 if __name__ == '__main__':
     # در محیط واقعی بهتر است از سرورهای WSGI مانند Gunicorn یا Waitress استفاده کنید
     # مثال: gunicorn --bind 0.0.0.0:5001 api_server:app
-    app.run(host='0.0.0.0', port=5001, debug=False)
+    app.run(host='0.0.0.0', port=5005, debug=False)
